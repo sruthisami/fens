@@ -1,0 +1,39 @@
+{
+  "name": "fens-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FlowLens explorer: Playwright batch job that maps a web app into FalkorDB",
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "dev": "npm run crawl -- --graph dev --reset",
+    "crawl": "tsc -p tsconfig.json && node dist/crawl.js",
+    "verify": "tsc -p tsconfig.json && node dist/verify.js",
+    "derive": "tsc -p tsconfig.json && node dist/derive.js",
+    "journey": "tsc -p tsconfig.json && node dist/journey.js",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/crawl.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "cheerio": "^1.2.0",
+    "falkordb": "^6.8.0",
+    "fast-xml-parser": "^5.11.2",
+    "lighthouse": "^13.5.0",
+    "playwright": "^1.64.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "eslint": "^10.12.0",
+    "prettier": "^3.9.10",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.71.2"
+  }
+}

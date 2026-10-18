@@ -1,0 +1,187 @@
+{
+  "notFound": {
+    "title": "Fence - Page not found",
+    "description": "This page does not exist at Fence."
+  },
+  "routes": [
+    {
+      "path": "/",
+      "title": "Fence - Home",
+      "description": "Everyday shoes, bags and accessories from Fence.",
+      "guard": "none",
+      "prerender": true
+    },
+    {
+      "path": "/shoes",
+      "title": "Fence - Shoes",
+      "description": "Runners and boots for every day.",
+      "guard": "none",
+      "prerender": true
+    },
+    {
+      "path": "/bags",
+      "title": "Fence - Bags",
+      "description": "Totes and crossbody bags.",
+      "guard": "none",
+      "prerender": true
+    },
+    {
+      "path": "/accessories",
+      "title": "Fence - Accessories",
+      "description": "Scarves, belts and small things.",
+      "guard": "none",
+      "prerender": true
+    },
+    {
+      "path": "/product/shoe-1",
+      "title": "Fence - Runner Low",
+      "description": "Runner Low: a lightweight everyday runner. $89.",
+      "guard": "none",
+      "prerender": true
+    },
+    {
+      "path": "/product/shoe-2",
+      "title": "Fence - City Boot",
+      "description": "City Boot: a water-resistant boot for city days. $129.",
+      "guard": "none",
+      "prerender": true
+    },
+    {
+      "path": "/product/bag-1",
+      "title": "Fence - Canvas Tote",
+      "description": "Canvas Tote: a roomy canvas tote with a zip top. $59.",
+      "guard": "none",
+      "prerender": true
+    },
+    {
+      "path": "/product/bag-2",
+      "title": "Fence - Leather Crossbody",
+      "description": "Leather Crossbody: a compact leather crossbody bag. $149.",
+      "guard": "none",
+      "prerender": true
+    },
+    {
+      "path": "/product/acc-1",
+      "title": "Fence - Wool Scarf",
+      "description": "Wool Scarf: a soft merino wool scarf. $35.",
+      "guard": "none",
+      "prerender": true
+    },
+    {
+      "path": "/product/acc-2",
+      "title": "Fence - Leather Belt",
+      "description": "Leather Belt: a full-grain leather belt. $45.",
+      "guard": "none",
+      "prerender": true
+    },
+    {
+      "path": "/cart",
+      "title": "Fence - Cart",
+      "description": "Your Fence shopping cart.",
+      "guard": "none"
+    },
+    {
+      "path": "/checkout/account",
+      "title": "Fence - Checkout account",
+      "description": "Check out as a guest or sign in.",
+      "guard": "cart-required",
+      "v2RedirectTo": "/checkout/shipping"
+    },
+    {
+      "path": "/checkout/shipping",
+      "title": "Fence - Checkout shipping",
+      "description": "Choose how your order ships.",
+      "guard": "cart-required"
+    },
+    {
+      "path": "/checkout/address",
+      "title": "Fence - Checkout address",
+      "description": "Where should we deliver your order?",
+      "guard": "cart-required",
+      "v2RedirectTo": "/checkout/shipping"
+    },
+    {
+      "path": "/checkout/delivery",
+      "title": "Fence - Checkout delivery",
+      "description": "Pick a delivery day.",
+      "guard": "cart-required",
+      "v2RedirectTo": "/checkout/shipping"
+    },
+    {
+      "path": "/checkout/billing",
+      "title": "Fence - Checkout payment",
+      "description": "Pay for your order.",
+      "guard": "cart-required"
+    },
+    {
+      "path": "/checkout/review",
+      "title": "Fence - Checkout review",
+      "description": "Review your order before placing it.",
+      "guard": "cart-required",
+      "v2RedirectTo": "/checkout/billing"
+    },
+    {
+      "path": "/checkout/confirmation",
+      "title": "Fence - Order placed",
+      "description": "Your Fence order is confirmed.",
+      "guard": "order-required"
+    },
+    {
+      "path": "/login",
+      "title": "Fence - Sign in",
+      "description": "Sign in to your Fence account.",
+      "guard": "none"
+    },
+    {
+      "path": "/signup",
+      "title": "Fence - Create account",
+      "description": "Create a new Fence account.",
+      "guard": "none"
+    },
+    {
+      "path": "/forgot-password",
+      "title": "Fence - Reset password",
+      "description": "Get a link to reset your password.",
+      "guard": "none"
+    },
+    {
+      "path": "/reset-sent",
+      "title": "Fence - Check your email",
+      "description": "A password reset link is on its way.",
+      "guard": "none"
+    },
+    {
+      "path": "/orders",
+      "title": "Fence - Your orders",
+      "description": "Your Fence order history.",
+      "guard": "none"
+    },
+    {
+      "path": "/help",
+      "title": "Fence - Help",
+      "description": "Answers about tracking, payment and delivery.",
+      "guard": "none",
+      "prerender": true
+    },
+    {
+      "path": "/returns",
+      "title": "Fence - Returns",
+      "description": "Return unworn items within 30 days.",
+      "guard": "none",
+      "prerender": true
+    },
+    {
+      "path": "/size-guide",
+      "title": "Fence - Size guide",
+      "description": "Shoe sizes in US, UK, EU and Japanese sizing, with foot length.",
+      "guard": "none",
+      "prerender": true
+    },
+    {
+      "path": "/faq",
+      "title": "Fence - FAQ",
+      "description": "Answers about shipping, delivery, returns, sizing and payment.",
+      "guard": "none"
+    }
+  ]
+}

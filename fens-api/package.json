@@ -1,0 +1,51 @@
+{
+  "name": "fens-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FlowLens API: HTTP layer in front of FalkorDB and the cloud-hosted agents",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "npm run build && node --watch --env-file=.env dist/index.js",
+    "build": "tsc -p tsconfig.json",
+    "start": "node --env-file=.env dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "mcp": "tsc -p tsconfig.json && node dist/mcp/stdio.js",
+    "mcp:falkordb": "tsc -p tsconfig.json && node dist/mcp/falkordb.js",
+    "mcp:check": "tsc -p tsconfig.json && node dist/mcp/check.js",
+    "import:history": "tsc -p tsconfig.json && node dist/history/import.js",
+    "embed": "tsc -p tsconfig.json && node dist/content/embed.js",
+    "linear:check": "tsc -p tsconfig.json && node dist/integrations/linearCheck.js",
+    "linear:setup": "tsc -p tsconfig.json && node dist/integrations/linearSetup.js",
+    "ground-truth": "tsc -p tsconfig.json && node dist/groundTruth/run.js",
+    "figma:sync-check": "tsc -p tsconfig.json && node dist/figma/syncCheck.js",
+    "tenants:seed": "tsc -p tsconfig.json && node dist/tenancy/seed.js",
+    "memory:compact": "tsc -p tsconfig.json && node dist/memory/compact.js",
+    "worker": "tsc -p tsconfig.json && node dist/coord/worker.js",
+    "workers": "tsc -p tsconfig.json && node dist/coord/worker.js --all"
+  },
+  "dependencies": {
+    "@google/genai": "^2.30.0",
+    "@linear/sdk": "^97.0.0",
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "falkordb": "^6.8.0",
+    "octokit": "^5.0.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^20.19.43",
+    "eslint": "^10.12.0",
+    "prettier": "^3.9.10",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.71.2"
+  }
+}

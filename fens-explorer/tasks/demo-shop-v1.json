@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": "buy-a-product",
+      "name": "Buy a product",
+      "start": "/",
+      "end": "/checkout/confirmation",
+      "steps": [
+        "Runner Low $89",
+        "Add to cart",
+        "Cart (1)",
+        "Checkout",
+        "Continue as guest",
+        "Continue",
+        "Continue",
+        "Continue",
+        "Continue",
+        "Place order"
+      ]
+    }
+  ]
+}

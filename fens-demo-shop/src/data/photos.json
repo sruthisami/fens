@@ -1,0 +1,65 @@
+{
+  "hero": {
+    "file": "/images/hero.jpg",
+    "alt": "Young man with glasses and beanie looking away",
+    "width": 1600,
+    "height": 1000,
+    "photographer": "Chu CHU",
+    "photographerUrl": "https://unsplash.com/@chuchu123456?utm_source=fence_demo_shop&utm_medium=referral",
+    "photoUrl": "https://unsplash.com/photos/young-man-with-glasses-and-beanie-looking-away-T7v3bjcx_JY?utm_source=fence_demo_shop&utm_medium=referral"
+  },
+  "shoe-1": {
+    "file": "/images/shoe-1.jpg",
+    "alt": "a close up of a white tennis shoe on a red surface",
+    "width": 900,
+    "height": 1200,
+    "photographer": "Heber Davis",
+    "photographerUrl": "https://unsplash.com/@heberdavisphotography?utm_source=fence_demo_shop&utm_medium=referral",
+    "photoUrl": "https://unsplash.com/photos/a-close-up-of-a-white-tennis-shoe-on-a-red-surface-ikx-OFw-hVo?utm_source=fence_demo_shop&utm_medium=referral"
+  },
+  "shoe-2": {
+    "file": "/images/shoe-2.jpg",
+    "alt": "brown leather lace up boots",
+    "width": 900,
+    "height": 1200,
+    "photographer": "Zac Wolff",
+    "photographerUrl": "https://unsplash.com/@zacwolff?utm_source=fence_demo_shop&utm_medium=referral",
+    "photoUrl": "https://unsplash.com/photos/brown-leather-lace-up-boots-esxf7PJmExQ?utm_source=fence_demo_shop&utm_medium=referral"
+  },
+  "bag-1": {
+    "file": "/images/bag-1.jpg",
+    "alt": "Black handbag with colorful striped fabric accent",
+    "width": 900,
+    "height": 1200,
+    "photographer": "Alethia Briones",
+    "photographerUrl": "https://unsplash.com/@alethiabaguilar?utm_source=fence_demo_shop&utm_medium=referral",
+    "photoUrl": "https://unsplash.com/photos/black-handbag-with-colorful-striped-fabric-accent-SNB3-i8uPiA?utm_source=fence_demo_shop&utm_medium=referral"
+  },
+  "bag-2": {
+    "file": "/images/bag-2.jpg",
+    "alt": "A pink and white background with circles",
+    "width": 900,
+    "height": 1200,
+    "photographer": "Pawel Czerwinski",
+    "photographerUrl": "https://unsplash.com/@pawel_czerwinski?utm_source=fence_demo_shop&utm_medium=referral",
+    "photoUrl": "https://unsplash.com/photos/a-pink-and-white-background-with-circles-3gbKmiTrlJ8?utm_source=fence_demo_shop&utm_medium=referral"
+  },
+  "acc-1": {
+    "file": "/images/acc-1.jpg",
+    "alt": "a woman is knitting a piece of fabric",
+    "width": 900,
+    "height": 1200,
+    "photographer": "Tanaphong Toochinda",
+    "photographerUrl": "https://unsplash.com/@daen_2chinda?utm_source=fence_demo_shop&utm_medium=referral",
+    "photoUrl": "https://unsplash.com/photos/a-woman-is-knitting-a-piece-of-fabric-WddCult7llk?utm_source=fence_demo_shop&utm_medium=referral"
+  },
+  "acc-2": {
+    "file": "/images/acc-2.jpg",
+    "alt": "Young woman in black leather dress and headband",
+    "width": 900,
+    "height": 1200,
+    "photographer": "Michael Guertin",
+    "photographerUrl": "https://unsplash.com/@imik?utm_source=fence_demo_shop&utm_medium=referral",
+    "photoUrl": "https://unsplash.com/photos/young-woman-in-black-leather-dress-and-headband-eO2oeI9wbLM?utm_source=fence_demo_shop&utm_medium=referral"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "note": "Fixture: resolved issues from earlier releases (fictional people). npm run import:history loads it into the flowlens-history graph.",
+  "people": [
+    { "name": "Priya Raman", "team": "Design System", "github": null },
+    { "name": "Diego Alvarez", "team": "Design System", "github": null },
+    { "name": "Mei Tanaka", "team": "Checkout", "github": null },
+    { "name": "Sam Okafor", "team": "Growth", "github": null },
+    { "name": "Lena Fischer", "team": "Content", "github": null }
+  ],
+  "issues": [
+    {
+      "title": "Sign in button text fails contrast in the header",
+      "component": "SignInButton",
+      "guideline": "WCAG 1.4.3",
+      "lens": "UX",
+      "assignee": "Priya Raman",
+      "closed_at": "2026-09-28"
+    },
+    {
+      "title": "Sign in button focus ring is invisible",
+      "component": "SignInButton",
+      "guideline": "WCAG 2.4.7",
+      "lens": "UX",
+      "assignee": "Priya Raman",
+      "closed_at": "2026-07-12"
+    },
+    {
+      "title": "Primary button hover state is below 4.5:1",
+      "component": "PrimaryButton",
+      "guideline": "WCAG 1.4.3",
+      "lens": "UX",
+      "assignee": "Priya Raman",
+      "closed_at": "2026-08-30"
+    },
+    {
+      "title": "Footer links have low contrast",
+      "component": "Footer",
+      "guideline": "WCAG 1.4.3",
+      "lens": "UX",
+      "assignee": "Diego Alvarez",
+      "closed_at": "2026-03-02"
+    },
+    {
+      "title": "Product card heading levels skip from h1 to h3",
+      "component": "ProductCard",
+      "guideline": "axe:heading-order",
+      "lens": "UX",
+      "assignee": "Diego Alvarez",
+      "closed_at": "2026-09-10"
+    },
+    {
+      "title": "Size table scrolls sideways on phones",
+      "component": "SizeTable",
+      "guideline": "WCAG 1.4.10",
+      "lens": "UX",
+      "assignee": "Diego Alvarez",
+      "closed_at": "2026-09-22"
+    },
+    {
+      "title": "Address fields use placeholders as labels",
+      "component": "FormField",
+      "guideline": "WCAG 3.3.2",
+      "lens": "UX",
+      "assignee": "Mei Tanaka",
+      "closed_at": "2026-09-18"
+    },
+    {
+      "title": "Payment form errors are not announced",
+      "component": "FormField",
+      "guideline": "WCAG 4.1.2",
+      "lens": "UX",
+      "assignee": "Mei Tanaka",
+      "closed_at": "2026-06-20"
+    },
+    {
+      "title": "Checkout flow has redundant confirmation steps",
+      "component": null,
+      "guideline": "ux:limit-choices",
+      "lens": "UX",
+      "assignee": "Mei Tanaka",
+      "closed_at": "2026-08-05"
+    },
+    {
+      "title": "FAQ answers are rendered only in the browser",
+      "component": "FaqAccordion",
+      "guideline": "aeo:content-without-js",
+      "lens": "AEO",
+      "assignee": "Sam Okafor",
+      "closed_at": "2026-09-25"
+    },
+    {
+      "title": "Product pages are missing Product structured data",
+      "component": null,
+      "guideline": "seo:product-structured-data",
+      "lens": "SEO",
+      "assignee": "Sam Okafor",
+      "closed_at": "2026-07-30"
+    },
+    {
+      "title": "Sitemap lists checkout URLs that redirect",
+      "component": null,
+      "guideline": "seo:sitemap",
+      "lens": "SEO",
+      "assignee": "Sam Okafor",
+      "closed_at": "2026-09-05"
+    },
+    {
+      "title": "Category page lists products from another category",
+      "component": null,
+      "guideline": "ux:information-architecture",
+      "lens": "UX",
+      "assignee": "Lena Fischer",
+      "closed_at": "2026-08-14"
+    },
+    {
+      "title": "Product descriptions use inconsistent names",
+      "component": null,
+      "guideline": "ux:information-architecture",
+      "lens": "UX",
+      "assignee": "Lena Fischer",
+      "closed_at": "2026-05-10"
+    }
+  ]
+}

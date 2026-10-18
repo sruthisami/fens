@@ -1,0 +1,2857 @@
+{
+  "generated_by": "scripts/figma-wire/prototype.mjs",
+  "file_key": "GUVwLRYNG1rdAqU7dvMQKG",
+  "graphs": {
+    "demo-shop-v1": {
+      "page": "Fence v1",
+      "exported_at": "2026-10-17T11:29:16Z",
+      "hash": "d2835082",
+      "transition": "INSTANT",
+      "starting_points": [
+        "Home (v1) -> /",
+        "Checkout flow (v1) -> /cart",
+        "Password reset (v1) -> /forgot-password"
+      ],
+      "mirror_frames": {
+        "/size-guide (mobile)": "/size-guide"
+      },
+      "state_only": [
+        "add to cart",
+        "remove",
+        "how much does shipping cost?",
+        "how long does delivery take?",
+        "can i return something?",
+        "how do fence shoes fit?",
+        "do i need an account to order?",
+        "which payment methods do you accept?"
+      ],
+      "connections": [
+        {
+          "from": "/accessories",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/accessories",
+          "label": "canvas tote $59",
+          "to": "/product/bag-1"
+        },
+        {
+          "from": "/accessories",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/accessories",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/accessories",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/accessories",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/accessories",
+          "label": "leather crossbody $149",
+          "to": "/product/bag-2"
+        },
+        {
+          "from": "/accessories",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/accessories",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/accessories",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/accessories",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/accessories",
+          "label": "wool scarf $35",
+          "to": "/product/acc-1"
+        },
+        {
+          "from": "/bags",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/bags",
+          "label": "canvas tote $59",
+          "to": "/product/bag-1"
+        },
+        {
+          "from": "/bags",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/bags",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/bags",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/bags",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/bags",
+          "label": "leather crossbody $149",
+          "to": "/product/bag-2"
+        },
+        {
+          "from": "/bags",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/bags",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/bags",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/bags",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/cart",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/cart",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/cart",
+          "label": "checkout",
+          "to": "/checkout/account"
+        },
+        {
+          "from": "/cart",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/cart",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/cart",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/cart",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/cart",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/cart",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/cart",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/checkout/account",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/checkout/account",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/checkout/account",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/checkout/account",
+          "label": "continue as guest",
+          "to": "/checkout/shipping"
+        },
+        {
+          "from": "/checkout/account",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/checkout/account",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/checkout/account",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/checkout/account",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/checkout/account",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/checkout/account",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/checkout/account",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/checkout/address",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/checkout/address",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/checkout/address",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/checkout/address",
+          "label": "continue",
+          "to": "/checkout/delivery"
+        },
+        {
+          "from": "/checkout/address",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/checkout/address",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/checkout/address",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/checkout/address",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/checkout/address",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/checkout/address",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/checkout/address",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "continue",
+          "to": "/checkout/review"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/checkout/delivery",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/checkout/delivery",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/checkout/delivery",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/checkout/delivery",
+          "label": "continue",
+          "to": "/checkout/billing"
+        },
+        {
+          "from": "/checkout/delivery",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/checkout/delivery",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/checkout/delivery",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/checkout/delivery",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/checkout/delivery",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/checkout/delivery",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/checkout/delivery",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/checkout/review",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/checkout/review",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/checkout/review",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/checkout/review",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/checkout/review",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/checkout/review",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/checkout/review",
+          "label": "place order",
+          "to": "/checkout/confirmation"
+        },
+        {
+          "from": "/checkout/review",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/checkout/review",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/checkout/review",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/checkout/review",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "continue",
+          "to": "/checkout/address"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/faq",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/faq",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/faq",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/faq",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/faq",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/faq",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/faq",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/faq",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/faq",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "send reset link",
+          "to": "/reset-sent"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/help",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/help",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/help",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/help",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/help",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/help",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/help",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/help",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/help",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/login",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/login",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/login",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/login",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/login",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/login",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/login",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/login",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/login",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/orders",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/orders",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/orders",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/orders",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/orders",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/orders",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/orders",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/orders",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/orders",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/orders",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "buy now",
+          "to": "/checkout/billing"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "buy now",
+          "to": "/checkout/billing"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "buy now",
+          "to": "/checkout/billing"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "buy now",
+          "to": "/checkout/billing"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "buy now",
+          "to": "/checkout/billing"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "buy now",
+          "to": "/checkout/billing"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/returns",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/returns",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/returns",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/returns",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/returns",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/returns",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/returns",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/returns",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/returns",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/shoes",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/shoes",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/shoes",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/shoes",
+          "label": "city boot $129",
+          "to": "/product/shoe-2"
+        },
+        {
+          "from": "/shoes",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/shoes",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/shoes",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/shoes",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/shoes",
+          "label": "runner low $89",
+          "to": "/product/shoe-1"
+        },
+        {
+          "from": "/shoes",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/shoes",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/signup",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/signup",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/signup",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/signup",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/signup",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/signup",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/signup",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/signup",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/signup",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/signup",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/size-guide",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/size-guide",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/size-guide",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/size-guide",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/size-guide",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/size-guide",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/size-guide",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/size-guide",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/size-guide",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/",
+          "label": "canvas tote $59",
+          "to": "/product/bag-1"
+        },
+        {
+          "from": "/",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/",
+          "label": "city boot $129",
+          "to": "/product/shoe-2"
+        },
+        {
+          "from": "/",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/",
+          "label": "leather belt $45",
+          "to": "/product/acc-2"
+        },
+        {
+          "from": "/",
+          "label": "leather crossbody $149",
+          "to": "/product/bag-2"
+        },
+        {
+          "from": "/",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/",
+          "label": "runner low $89",
+          "to": "/product/shoe-1"
+        },
+        {
+          "from": "/",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/",
+          "label": "shop shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/",
+          "label": "wool scarf $35",
+          "to": "/product/acc-1"
+        }
+      ],
+      "capture_gaps": [
+        {
+          "from": "/orders",
+          "label": "create an account",
+          "to": "/signup"
+        },
+        {
+          "from": "/login",
+          "label": "forgot password?",
+          "to": "/forgot-password"
+        },
+        {
+          "from": "/login",
+          "label": "create account",
+          "to": "/signup"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "continue shopping",
+          "to": "/"
+        }
+      ]
+    },
+    "demo-shop-v2": {
+      "page": "Fence v2",
+      "exported_at": "2026-10-17T11:29:16Z",
+      "hash": "258dc399",
+      "transition": "INSTANT",
+      "starting_points": [
+        "Home (v2) -> /",
+        "Checkout flow (v2) -> /cart",
+        "Password reset (v2) -> /forgot-password"
+      ],
+      "mirror_frames": {
+        "/size-guide (mobile)": "/size-guide"
+      },
+      "state_only": [
+        "add to cart",
+        "remove",
+        "how much does shipping cost?",
+        "how long does delivery take?",
+        "can i return something?",
+        "how do fence shoes fit?",
+        "do i need an account to order?",
+        "which payment methods do you accept?"
+      ],
+      "connections": [
+        {
+          "from": "/accessories",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/accessories",
+          "label": "canvas tote $59",
+          "to": "/product/bag-1"
+        },
+        {
+          "from": "/accessories",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/accessories",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/accessories",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/accessories",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/accessories",
+          "label": "leather crossbody $149",
+          "to": "/product/bag-2"
+        },
+        {
+          "from": "/accessories",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/accessories",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/accessories",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/accessories",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/accessories",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/accessories",
+          "label": "wool scarf $35",
+          "to": "/product/acc-1"
+        },
+        {
+          "from": "/bags",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/bags",
+          "label": "canvas tote $59",
+          "to": "/product/bag-1"
+        },
+        {
+          "from": "/bags",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/bags",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/bags",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/bags",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/bags",
+          "label": "leather crossbody $149",
+          "to": "/product/bag-2"
+        },
+        {
+          "from": "/bags",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/bags",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/bags",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/bags",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/bags",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/cart",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/cart",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/cart",
+          "label": "checkout",
+          "to": "/checkout/shipping"
+        },
+        {
+          "from": "/cart",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/cart",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/cart",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/cart",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/cart",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/cart",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/cart",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/cart",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "place order",
+          "to": "/checkout/confirmation"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/checkout/billing",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "continue",
+          "to": "/checkout/billing"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/checkout/shipping",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/faq",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/faq",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/faq",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/faq",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/faq",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/faq",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/faq",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/faq",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/faq",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/faq",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "send reset link",
+          "to": "/reset-sent"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/forgot-password",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/help",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/help",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/help",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/help",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/help",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/help",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/help",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/help",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/help",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/help",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/login",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/login",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/login",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/login",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/login",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/login",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/login",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/login",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/login",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/login",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/orders",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/orders",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/orders",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/orders",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/orders",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/orders",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/orders",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/orders",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/orders",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/orders",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "add to cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "buy now",
+          "to": "/checkout/billing"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/product/acc-1",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "add to cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "buy now",
+          "to": "/checkout/billing"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/product/acc-2",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "add to cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "buy now",
+          "to": "/checkout/billing"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/product/bag-1",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "add to cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "buy now",
+          "to": "/checkout/billing"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/product/bag-2",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "add to cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "buy now",
+          "to": "/checkout/billing"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/product/shoe-1",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "add to cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "buy now",
+          "to": "/checkout/billing"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/product/shoe-2",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/reset-sent",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/reset-sent",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/reset-sent",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/reset-sent",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/reset-sent",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/reset-sent",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/reset-sent",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/reset-sent",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/reset-sent",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/reset-sent",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/reset-sent",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/returns",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/returns",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/returns",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/returns",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/returns",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/returns",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/returns",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/returns",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/returns",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/returns",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/shoes",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/shoes",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/shoes",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/shoes",
+          "label": "city boot $129",
+          "to": "/product/shoe-2"
+        },
+        {
+          "from": "/shoes",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/shoes",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/shoes",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/shoes",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/shoes",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/shoes",
+          "label": "runner low $89",
+          "to": "/product/shoe-1"
+        },
+        {
+          "from": "/shoes",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/shoes",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/signup",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/signup",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/signup",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/signup",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/signup",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/signup",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/signup",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/signup",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/signup",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/signup",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/signup",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/size-guide",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/size-guide",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/size-guide",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/size-guide",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/size-guide",
+          "label": "fence",
+          "to": "/"
+        },
+        {
+          "from": "/size-guide",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/size-guide",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/size-guide",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/size-guide",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/size-guide",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/",
+          "label": "accessories",
+          "to": "/accessories"
+        },
+        {
+          "from": "/",
+          "label": "bags",
+          "to": "/bags"
+        },
+        {
+          "from": "/",
+          "label": "canvas tote $59",
+          "to": "/product/bag-1"
+        },
+        {
+          "from": "/",
+          "label": "cart",
+          "to": "/cart"
+        },
+        {
+          "from": "/",
+          "label": "city boot $129",
+          "to": "/product/shoe-2"
+        },
+        {
+          "from": "/",
+          "label": "faq",
+          "to": "/faq"
+        },
+        {
+          "from": "/",
+          "label": "help",
+          "to": "/help"
+        },
+        {
+          "from": "/",
+          "label": "leather belt $45",
+          "to": "/product/acc-2"
+        },
+        {
+          "from": "/",
+          "label": "leather crossbody $149",
+          "to": "/product/bag-2"
+        },
+        {
+          "from": "/",
+          "label": "orders",
+          "to": "/orders"
+        },
+        {
+          "from": "/",
+          "label": "returns",
+          "to": "/returns"
+        },
+        {
+          "from": "/",
+          "label": "runner low $89",
+          "to": "/product/shoe-1"
+        },
+        {
+          "from": "/",
+          "label": "shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/",
+          "label": "shop shoes",
+          "to": "/shoes"
+        },
+        {
+          "from": "/",
+          "label": "sign in",
+          "to": "/login"
+        },
+        {
+          "from": "/",
+          "label": "size guide",
+          "to": "/size-guide"
+        },
+        {
+          "from": "/",
+          "label": "wool scarf $35",
+          "to": "/product/acc-1"
+        }
+      ],
+      "capture_gaps": [
+        {
+          "from": "/orders",
+          "label": "create an account",
+          "to": "/signup"
+        },
+        {
+          "from": "/login",
+          "label": "forgot password?",
+          "to": "/forgot-password"
+        },
+        {
+          "from": "/login",
+          "label": "create account",
+          "to": "/signup"
+        },
+        {
+          "from": "/reset-sent",
+          "label": "back to home",
+          "to": "/"
+        },
+        {
+          "from": "/checkout/confirmation",
+          "label": "continue shopping",
+          "to": "/"
+        }
+      ]
+    }
+  }
+}

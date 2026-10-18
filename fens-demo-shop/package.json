@@ -1,0 +1,44 @@
+{
+  "name": "fens-demo-shop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Small demo storefront used as the FlowLens test target",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "npm run build:server && SHOP_DEV=1 SHOP_VERSION=v1 PORT=5174 node dist-server/server/index.js",
+    "dev:v2": "npm run build:server && SHOP_DEV=1 SHOP_VERSION=v2 PORT=5175 node dist-server/server/index.js",
+    "serve:v1": "npm run typecheck && npm run build:client:v1 && npm run build:server && SHOP_VERSION=v1 PORT=5174 node dist-server/server/index.js",
+    "serve:v2": "npm run typecheck && npm run build:client:v2 && npm run build:server && SHOP_VERSION=v2 PORT=5175 node dist-server/server/index.js",
+    "build": "npm run typecheck && npm run build:client:v1 && npm run build:client:v2 && npm run build:server",
+    "build:client:v1": "SHOP_VERSION=v1 vite build --outDir dist/v1 --emptyOutDir && SHOP_VERSION=v1 vite build --ssr src/entry-server.tsx --outDir dist/ssr-v1 --emptyOutDir",
+    "build:client:v2": "SHOP_VERSION=v2 vite build --outDir dist/v2 --emptyOutDir && SHOP_VERSION=v2 vite build --ssr src/entry-server.tsx --outDir dist/ssr-v2 --emptyOutDir",
+    "build:server": "tsc -p tsconfig.server.json",
+    "start": "node dist-server/server/index.js",
+    "photos": "node --env-file=.env scripts/fetch-photos.mjs",
+    "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.server.json --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "flaws:md": "node scripts/flaws-md.mjs && prettier --write FLAWS.md",
+    "flaws:check": "node scripts/flaws-md.mjs --check"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.4",
+    "vite": "^8.3.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^10.12.0",
+    "prettier": "^3.9.10",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.71.2"
+  }
+}

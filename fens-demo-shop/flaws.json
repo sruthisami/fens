@@ -1,0 +1,616 @@
+{
+  "$comment": "Ground truth for the demo shop: every planted flaw (F), planted conflict (C) and known unplanted finding (U), once. FLAWS.md's tables are generated from this file (npm run flaws:md); fens-explorer's verify and fens-api's npm run ground-truth read it. Status per version: present, fixed or persisting (still there after being present in v1).",
+  "measured_on": "2026-10-17",
+  "versions": {
+    "v1": {
+      "graph": "demo-shop-v1",
+      "port": 5174,
+      "screens": 27,
+      "orphans": 1,
+      "dead_ends": 1,
+      "health": 33,
+      "ux_score": 24,
+      "seo_score": 88
+    },
+    "v2": {
+      "graph": "demo-shop-v2",
+      "port": 5175,
+      "screens": 23,
+      "orphans": 0,
+      "dead_ends": 0,
+      "health": 81,
+      "ux_score": 71,
+      "seo_score": 88
+    }
+  },
+  "items": [
+    {
+      "id": "F1",
+      "kind": "flaw",
+      "title": "Checkout detour: main flow is long, a short path is hidden",
+      "routes": [
+        "/",
+        "/product/shoe-1",
+        "/product/shoe-2",
+        "/product/bag-1",
+        "/product/bag-2",
+        "/product/acc-1",
+        "/product/acc-2",
+        "/cart",
+        "/checkout/account",
+        "/checkout/shipping",
+        "/checkout/address",
+        "/checkout/delivery",
+        "/checkout/billing",
+        "/checkout/review",
+        "/checkout/confirmation"
+      ],
+      "status": {
+        "v1": "present",
+        "v2": "fixed"
+      },
+      "detection": {
+        "issues": [],
+        "tools": ["compare_task", "shortest_path"],
+        "findings": ["flow|task:buy-a-product"],
+        "category": "flow"
+      },
+      "expected": {
+        "v1": {
+          "forced_clicks": 10,
+          "shortest_clicks": 4,
+          "detour": 6
+        },
+        "v2": {
+          "forced_clicks": 5,
+          "shortest_clicks": 3,
+          "detour": 2
+        }
+      },
+      "proposal": null,
+      "decision": null,
+      "figma_routes": [
+        "/",
+        "/product/shoe-1",
+        "/product/shoe-2",
+        "/product/bag-1",
+        "/product/bag-2",
+        "/product/acc-1",
+        "/product/acc-2",
+        "/cart",
+        "/checkout/account",
+        "/checkout/shipping",
+        "/checkout/address",
+        "/checkout/delivery",
+        "/checkout/billing",
+        "/checkout/review",
+        "/checkout/confirmation"
+      ],
+      "notes": "In v2 both flows are intended: 5 clicks through the cart, 3 with Buy now. A detour under 3 clicks is not a finding."
+    },
+    {
+      "id": "F2",
+      "kind": "flaw",
+      "title": "Dead end: /reset-sent has no header, footer or links",
+      "routes": ["/reset-sent"],
+      "status": {
+        "v1": "present",
+        "v2": "fixed"
+      },
+      "detection": {
+        "issues": [],
+        "tools": ["find_dead_ends"],
+        "findings": ["structure|screen:/reset-sent"],
+        "category": "structure"
+      },
+      "expected": {
+        "v1": {
+          "outgoing_edges": 0,
+          "dead_ends": 1
+        },
+        "v2": {
+          "outgoing_edges": 12,
+          "dead_ends": 0
+        }
+      },
+      "proposal": null,
+      "decision": null,
+      "figma_routes": ["/reset-sent"],
+      "notes": "v2 renders the page in the shared layout with a Back to home link."
+    },
+    {
+      "id": "F3",
+      "kind": "flaw",
+      "title": "Orphan screen: /orders has no inbound link",
+      "routes": ["/orders"],
+      "status": {
+        "v1": "present",
+        "v2": "fixed"
+      },
+      "detection": {
+        "issues": [],
+        "tools": ["find_orphans", "unreachable_by_links"],
+        "findings": ["structure|screen:/orders", "seo-agent|seo|screen:/orders"],
+        "category": "structure"
+      },
+      "expected": {
+        "v1": {
+          "inbound_routes": 0,
+          "orphans": 1,
+          "link_depth": null
+        },
+        "v2": {
+          "inbound_routes": 22,
+          "orphans": 0,
+          "link_depth": 1
+        }
+      },
+      "proposal": {
+        "agent": "seo",
+        "change_type": "add_link",
+        "target": "/orders",
+        "versions": ["v1"]
+      },
+      "decision": {
+        "outcome": "approved",
+        "playbook": null,
+        "versions": ["v1"]
+      },
+      "figma_routes": ["/orders"],
+      "notes": "Crawled only through --seed /orders in v1."
+    },
+    {
+      "id": "F4",
+      "kind": "flaw",
+      "title": "Low contrast: header Sign in button",
+      "routes": [
+        "/",
+        "/shoes",
+        "/bags",
+        "/accessories",
+        "/product/shoe-1",
+        "/product/shoe-2",
+        "/product/bag-1",
+        "/product/bag-2",
+        "/product/acc-1",
+        "/product/acc-2",
+        "/cart",
+        "/checkout/account",
+        "/checkout/shipping",
+        "/checkout/address",
+        "/checkout/delivery",
+        "/checkout/billing",
+        "/checkout/review",
+        "/checkout/confirmation",
+        "/login",
+        "/signup",
+        "/forgot-password",
+        "/orders",
+        "/help",
+        "/returns",
+        "/size-guide",
+        "/faq"
+      ],
+      "status": {
+        "v1": "present",
+        "v2": "fixed"
+      },
+      "detection": {
+        "issues": [
+          {
+            "source": "axe",
+            "rule_id": "color-contrast",
+            "component": "SignInButton",
+            "guideline": "WCAG 1.4.3"
+          }
+        ],
+        "tools": ["component_fanout", "issues_by_component"],
+        "findings": ["accessibility|component:SignInButton|color-contrast"],
+        "category": "accessibility"
+      },
+      "expected": {
+        "v1": {
+          "screens": 26,
+          "contrast_ratio": 2.21
+        },
+        "v2": {
+          "screens": 0,
+          "contrast_ratio": 5.49
+        }
+      },
+      "proposal": null,
+      "decision": null,
+      "figma_routes": [
+        "/",
+        "/shoes",
+        "/bags",
+        "/accessories",
+        "/product/shoe-1",
+        "/product/shoe-2",
+        "/product/bag-1",
+        "/product/bag-2",
+        "/product/acc-1",
+        "/product/acc-2",
+        "/cart",
+        "/checkout/account",
+        "/checkout/shipping",
+        "/checkout/address",
+        "/checkout/delivery",
+        "/checkout/billing",
+        "/checkout/review",
+        "/checkout/confirmation",
+        "/login",
+        "/signup",
+        "/forgot-password",
+        "/orders",
+        "/help",
+        "/returns",
+        "/size-guide",
+        "/faq"
+      ],
+      "notes": "Every route with the shared header (all but /reset-sent in v1). Buy now passes at 4.54:1."
+    },
+    {
+      "id": "F5",
+      "kind": "flaw",
+      "title": "Missing labels: inputs on /checkout/address",
+      "routes": ["/checkout/address"],
+      "status": {
+        "v1": "present",
+        "v2": "fixed"
+      },
+      "detection": {
+        "issues": [
+          {
+            "source": "flowlens",
+            "rule_id": "flowlens/label-missing",
+            "component": "FormField",
+            "guideline": "WCAG 3.3.2"
+          }
+        ],
+        "tools": ["component_fanout"],
+        "findings": ["accessibility|component:FormField|flowlens/label-missing"],
+        "category": "accessibility"
+      },
+      "expected": {
+        "v1": {
+          "screens": 1,
+          "nodes": 4,
+          "axe_label_violations": 0
+        },
+        "v2": {
+          "screens": 0,
+          "nodes": 0
+        }
+      },
+      "proposal": null,
+      "decision": null,
+      "figma_routes": ["/checkout/address"],
+      "notes": "axe's label rule accepts a placeholder, so only the FlowLens rule finds it. v2 redirects the route to /checkout/shipping."
+    },
+    {
+      "id": "F6",
+      "kind": "flaw",
+      "title": "Accessories page lists mostly bags",
+      "routes": ["/accessories"],
+      "status": {
+        "v1": "present",
+        "v2": "persisting"
+      },
+      "detection": {
+        "issues": [],
+        "tools": ["ia_mismatch", "similar_screens"],
+        "findings": ["content|screen:/accessories|ia-mismatch"],
+        "category": "content"
+      },
+      "expected": {
+        "v1": {
+          "listed_products": 3,
+          "bags": 2
+        },
+        "v2": {
+          "listed_products": 3,
+          "bags": 2
+        }
+      },
+      "proposal": null,
+      "decision": null,
+      "figma_routes": ["/accessories"],
+      "notes": "Not fixed in v2 on purpose (regression memory)."
+    },
+    {
+      "id": "F7",
+      "kind": "flaw",
+      "title": "Heading order: category pages skip from h1 to h3",
+      "routes": ["/shoes", "/bags", "/accessories"],
+      "status": {
+        "v1": "present",
+        "v2": "persisting"
+      },
+      "detection": {
+        "issues": [
+          {
+            "source": "axe",
+            "rule_id": "heading-order",
+            "component": "ProductCard",
+            "guideline": null
+          }
+        ],
+        "tools": ["component_fanout"],
+        "findings": ["accessibility|component:ProductCard|heading-order"],
+        "category": "accessibility"
+      },
+      "expected": {
+        "v1": {
+          "screens": 3
+        },
+        "v2": {
+          "screens": 3
+        }
+      },
+      "proposal": null,
+      "decision": null,
+      "figma_routes": ["/shoes", "/bags", "/accessories"],
+      "notes": "A component issue that persists in v2, to test release diffing."
+    },
+    {
+      "id": "F8",
+      "kind": "flaw",
+      "title": "Missing main landmark on /reset-sent (side effect of F2)",
+      "routes": ["/reset-sent"],
+      "status": {
+        "v1": "present",
+        "v2": "fixed"
+      },
+      "detection": {
+        "issues": [
+          {
+            "source": "axe",
+            "rule_id": "landmark-one-main",
+            "component": null,
+            "guideline": null
+          },
+          {
+            "source": "axe",
+            "rule_id": "region",
+            "component": null,
+            "guideline": null
+          }
+        ],
+        "tools": [],
+        "findings": ["structure|screen:/reset-sent"],
+        "category": "structure"
+      },
+      "expected": {
+        "v1": {
+          "issues": 2,
+          "screens": 1
+        },
+        "v2": {
+          "issues": 0,
+          "screens": 0
+        }
+      },
+      "proposal": null,
+      "decision": null,
+      "figma_routes": ["/reset-sent"],
+      "notes": "The screen has no data-component, so rules mode files no component finding; the dead-end finding on the same screen (F2) carries it."
+    },
+    {
+      "id": "C1",
+      "kind": "conflict",
+      "title": "/size-guide: a data table engines can read, but it overflows a 375px phone",
+      "routes": ["/size-guide"],
+      "status": {
+        "v1": "present",
+        "v2": "persisting"
+      },
+      "detection": {
+        "issues": [
+          {
+            "source": "flowlens",
+            "rule_id": "flowlens/mobile-overflow",
+            "component": "SizeTable",
+            "guideline": "WCAG 1.4.10"
+          }
+        ],
+        "tools": ["mobile_overflow_screens"],
+        "findings": ["accessibility|component:SizeTable|flowlens/mobile-overflow"],
+        "category": "accessibility"
+      },
+      "expected": {
+        "v1": {
+          "screens": 1,
+          "document_width_px": 806,
+          "element_width_px": 790
+        },
+        "v2": {
+          "screens": 1,
+          "document_width_px": 806,
+          "element_width_px": 790
+        }
+      },
+      "proposal": {
+        "agent": "ux",
+        "change_type": "table_to_cards",
+        "target": "/size-guide",
+        "versions": ["v1", "v2"]
+      },
+      "decision": {
+        "outcome": "reconciled",
+        "playbook": "pb-table-responsive",
+        "versions": ["v1", "v2"]
+      },
+      "figma_routes": ["/size-guide", "/size-guide (mobile)"],
+      "notes": "806px is the document width the shop measures; 790px is the overflowing SizeTable element the explorer stores."
+    },
+    {
+      "id": "C2",
+      "kind": "conflict",
+      "title": "/faq: the accordion's answers exist only after JavaScript",
+      "routes": ["/faq"],
+      "status": {
+        "v1": "present",
+        "v2": "persisting"
+      },
+      "detection": {
+        "issues": [
+          {
+            "source": "flowlens",
+            "rule_id": "flowlens/js-only-content",
+            "component": null,
+            "guideline": "aeo:content-without-js"
+          }
+        ],
+        "tools": ["js_only_content"],
+        "findings": ["seo-agent|aeo|screen:/faq|flowlens/js-only-content"],
+        "category": "aeo"
+      },
+      "expected": {
+        "v1": {
+          "screens": 1,
+          "raw_answers": 0,
+          "rendered_answers": 6
+        },
+        "v2": {
+          "screens": 1,
+          "raw_answers": 0,
+          "rendered_answers": 6
+        }
+      },
+      "proposal": {
+        "agent": "seo",
+        "change_type": "content_in_html",
+        "target": "/faq",
+        "versions": ["v1", "v2"]
+      },
+      "decision": {
+        "outcome": "approved",
+        "playbook": null,
+        "versions": ["v1", "v2"]
+      },
+      "figma_routes": ["/faq"],
+      "notes": "No UX finding is expected: the accordion itself is fine."
+    },
+    {
+      "id": "C3",
+      "kind": "conflict",
+      "title": "Home links all six products: one click deep for crawlers, but a busy page",
+      "routes": [
+        "/",
+        "/product/shoe-1",
+        "/product/shoe-2",
+        "/product/bag-1",
+        "/product/bag-2",
+        "/product/acc-1",
+        "/product/acc-2"
+      ],
+      "status": {
+        "v1": "present",
+        "v2": "persisting"
+      },
+      "detection": {
+        "issues": [],
+        "tools": ["screen_links", "crawl_depth"],
+        "findings": ["structure|screen:/|choice-overload"],
+        "category": "seo"
+      },
+      "expected": {
+        "v1": {
+          "product_pages": 6,
+          "product_link_depth": 1,
+          "home_plain_links": 16
+        },
+        "v2": {
+          "product_pages": 6,
+          "product_link_depth": 1,
+          "home_plain_links": 17
+        }
+      },
+      "proposal": {
+        "agent": "ux",
+        "change_type": "remove_links",
+        "target": "/",
+        "versions": ["v1", "v2"]
+      },
+      "decision": {
+        "outcome": "reconciled",
+        "playbook": "pb-declutter-depth-cap",
+        "versions": ["v1", "v2"]
+      },
+      "figma_routes": [
+        "/",
+        "/product/shoe-1",
+        "/product/shoe-2",
+        "/product/bag-1",
+        "/product/bag-2",
+        "/product/acc-1",
+        "/product/acc-2"
+      ],
+      "notes": "Shown by a proposal, not a finding. v2's Home has one more plain link (the header Orders link)."
+    },
+    {
+      "id": "U1",
+      "kind": "unplanted",
+      "title": "Lighthouse LCP discovery insight on the sampled pages",
+      "routes": ["/", "/bags", "/accessories", "/product/acc-1"],
+      "status": {
+        "v1": "present",
+        "v2": "persisting"
+      },
+      "detection": {
+        "issues": [
+          {
+            "source": "lighthouse",
+            "rule_id": "lcp-discovery-insight",
+            "component": null,
+            "guideline": null
+          }
+        ],
+        "tools": [],
+        "findings": ["seo-agent|seo|screen:/|lcp-discovery-insight"],
+        "category": "seo"
+      },
+      "expected": {
+        "v1": {
+          "screens": 4
+        },
+        "v2": {
+          "screens": 4
+        }
+      },
+      "proposal": null,
+      "decision": null,
+      "figma_routes": ["/", "/bags", "/accessories", "/product/acc-1"],
+      "notes": "A performance insight from serving locally (the hero image is not preloaded). Lighthouse runs on a sample, so the screens can vary between crawls."
+    },
+    {
+      "id": "U2",
+      "kind": "unplanted",
+      "title": "/product/acc-1 reads like a bag page (follows from F6)",
+      "routes": ["/product/acc-1"],
+      "status": {
+        "v1": "present",
+        "v2": "persisting"
+      },
+      "detection": {
+        "issues": [],
+        "tools": ["ia_mismatch"],
+        "findings": ["content|screen:/product/acc-1|ia-mismatch"],
+        "category": "content"
+      },
+      "expected": {
+        "v1": {
+          "screens": 1
+        },
+        "v2": {
+          "screens": 1
+        }
+      },
+      "proposal": null,
+      "decision": null,
+      "figma_routes": ["/product/acc-1"],
+      "notes": "The scarf is listed only under /accessories, whose other items are bags, so its nearest content neighbours are bag pages."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$comment": "Tenants of this FlowLens install. No real accounts: a request names its tenant with the X-Tenant-Token header and its user with X-User. Each token comes from the environment variable token_env, with dev_token as the local default. graphs are the site (crawl) graphs the tenant may see; history_graph is its issue-history graph (or null).",
+  "tenants": [
+    {
+      "id": "fence-team",
+      "name": "Fence team",
+      "token_env": "TENANT_TOKEN_FENCE_TEAM",
+      "dev_token": "dev-fence-team",
+      "users": [
+        { "id": "ana", "name": "Ana" },
+        { "id": "ben", "name": "Ben" }
+      ],
+      "graphs": ["demo-shop-v1", "demo-shop-v2", "demo-live"],
+      "history_graph": "flowlens-history"
+    },
+    {
+      "id": "acme-demo",
+      "name": "Acme demo",
+      "token_env": "TENANT_TOKEN_ACME_DEMO",
+      "dev_token": "dev-acme-demo",
+      "users": [{ "id": "chris", "name": "Chris" }],
+      "graphs": ["acme-shop-v1"],
+      "history_graph": null
+    }
+  ]
+}
